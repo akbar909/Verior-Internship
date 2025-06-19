@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sticky-header" id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <header class="header">
+        <h1>Welcome to My Home Page</h1>
+    </header>
+
+    <section id="about">
+        <!-- About Section -->
+        <h2 >About Me</h2>
+        <img src="pic.jpg" alt="A photo of me" width="200" />
+        <p>My name is Ghulam Akbar, and I am currently learning web development as an intern. I am passionate about technology and enjoy building creative projects.</p>
+        <p>In my free time, I love reading books, watching tech videos, or playing games. My goal is to become a skilled full-stack developer.</p>
+    </section>
+
+    <section id="newspaper">
+        <h2>Newspaper Layout</h2>
+        <div class="newspaper">
+            <article>
+                <h2>Headline 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac orci vitae justo tincidunt tincidunt.</p>
+            </article>
+            <article>
+                <h2>Headline 2</h2>
+                <p>Nulla facilisi. Sed vehicula, justo nec tincidunt tincidunt, eros libero tincidunt eros, nec tincidunt eros libero tincidunt eros.</p>
+            </article>
+            <aside>
+                <h3>Sidebar</h3>
+                <p>Additional information or advertisements can go here.</p>
+            </aside>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <!-- Portfolio Layout -->
+       <h1>Portfolio Layout</h1>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <img src="pic.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="pic.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="pic.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
