@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.counter {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
