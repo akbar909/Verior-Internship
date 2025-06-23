@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; }
+    .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 24px; }
+    .flex-sections { display: flex; gap: 32px; }
+    .section { flex: 1; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px #0001; padding: 24px; margin-bottom: 0; border-bottom: none; }
+    h1, h2 { color: #2a5d8f; }
+    #weatherResult img { vertical-align: middle; }
+    button { background: #2a5d8f; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin-top: 8px; }
+    button:hover { background: #1b3c5a; }
+    #userResult ul { list-style: none; padding: 0; max-height: 350px; overflow-y: auto; }
+    #userResult li { margin-bottom: 10px; background: #f7fafc; padding: 8px; border-radius: 4px; }
+    @media (max-width: 800px) {
+      .flex-sections { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flex-sections">
+      <div class="section weather-app">
+        <h1>🌤 Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherResult"></div>
+      </div>
+      <div class="section user-app">
+        <h1>👤 User List</h1>
+        <button onclick="fetchUsers()">Fetch Users</button>
+        <div id="userResult"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
