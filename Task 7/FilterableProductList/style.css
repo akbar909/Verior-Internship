@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: calc(100% - 31px); /* Adjust width to account for padding */
+    padding: 10px 15px; /* Ensure padding on the right side */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.product-list li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    #searchInput {
+        font-size: 14px;
+    }
+
+    .product-list li {
+        font-size: 14px;
+    }
+}
