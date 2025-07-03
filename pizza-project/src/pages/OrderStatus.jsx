@@ -55,7 +55,7 @@ const OrderStatus = () => {
     return (
         <div className="max-w-3xl mx-auto py-6 px-2 sm:py-10">
             <div className="flex items-center justify-between mb-4 sm:mb-6">
-                <h2 className="text-lg sm:text-2xl md:text-3xl font-bold">Order ${orderId} status</h2>
+                <h2 className="text-sm sm:text-2xl md:text-3xl font-bold">Order ${orderId} status</h2>
                 <div className="flex gap-2 sm:gap-3">
                     {isPriority && <span className="bg-red-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-sm sm:text-lg">PRIORITY</span>}
                     <span className="bg-green-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-sm sm:text-lg">PREPARING ORDER</span>
