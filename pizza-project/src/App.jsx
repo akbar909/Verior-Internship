@@ -13,12 +13,12 @@ import store from './store';
 
 const App = () => {
   const [name, setName] = useState(() => {
-  return localStorage.getItem('name') || '';
-});
+    return localStorage.getItem('name') || '';
+  });
 
-useEffect(() => {
-  localStorage.setItem('name', name);
-}, [name]);
+  useEffect(() => {
+    localStorage.setItem('name', name);
+  }, [name]);
   return (
     <Provider store={store}>
       <Router>
