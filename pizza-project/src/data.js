@@ -1,9 +1,9 @@
-import margherita from "./assets/margherita.jpg";
 import capricciosa from "./assets/capricciosa.jpg";
+import Diavola from "./assets/Diavola.jpg";
+import fruttiDiMare from "./assets/FruttidiMare.jpg";
+import margherita from "./assets/margherita.jpg";
 import prosciutto from "./assets/ProsciuttoeRucola.jpg";
 import quattro from "./assets/QuattroFormaggi.jpg";
-import Diavola from "./assets/Diavola.jpg";
-import fruittiDiMare from "./assets/FruttidiMare.jpg";
 const pizzaData = [
   {
     name: "Margherita",
@@ -45,7 +45,7 @@ const pizzaData = [
     name: "Frutti di Mare",
     ingredients: "Tomato, Mozzarella, Mixed Seafood",
     price: 18,
-    photoName: fruittiDiMare,
+    photoName: fruttiDiMare,
     soldOut: true,
   },
 ];
