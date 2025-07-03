@@ -57,8 +57,13 @@ const OrderStatus = () => {
             <div className="flex items-center justify-between mb-4 sm:mb-6">
                 <h2 className="text-sm sm:text-2xl md:text-3xl font-bold">Order ${orderId} status</h2>
                 <div className="flex gap-2 sm:gap-3">
+<<<<<<< HEAD
                     {isPriority && <span className="bg-red-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-xs sm:text-lg">PRIORITY</span>}
                     <span className="bg-green-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-xs sm:text-lg">PREPARING ORDER</span>
+=======
+                    {isPriority && <span className="bg-red-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-sm sm:text-lg">PRIORITY</span>}
+                    <span className="bg-green-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-full font-semibold text-sm sm:text-lg">PREPARING ORDER</span>
+>>>>>>> 83ae8e24b67b7a9df938df642dc01018b38cbfb1
                 </div>
             </div>
             <div className="bg-gray-100 rounded mb-4 sm:mb-6 flex items-center justify-between px-4 py-3 sm:px-8 sm:py-6">
