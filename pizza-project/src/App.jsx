@@ -5,7 +5,7 @@ import CartBar from './components/CartBar';
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
-import Menu from "./pages/menu";
+import Menu from "./pages/Menu";
 import New from "./pages/New";
 import OrderStatus from "./pages/OrderStatus";
 import store from './store';
